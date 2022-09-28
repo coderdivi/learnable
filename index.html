@@ -15,8 +15,31 @@
         <header id="showcase">
             <div class="showcase-top">
                 <img src="./img/Flixia logo.PNG" alt="Can't load image">
-                <a href="#" class="btn btn-flat">Login</a>
-                <a href="#" class="btn btn-rounded">Sign up</a>
+                <a href="#" class="btn btn-rounded loginbtn" onclick="document.getElementById('login-form').style.display='block'" >Login</a>
+            </div>
+            <div id='login-form' class='login-page'>
+                <div class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                        <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                        <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                    </div>
+                    <form id='login' class='input-group-login'>
+                        <input type='text' class='input-field' placeholder='Email Address' required>
+                        <input type='password' class='input-field' placeholder='Enter Password' required>
+                        <input type='checkbox' class='check-box'><span>Remember Password</span>
+                        <button type='submit' class='submit-btn'>Log in</button>
+                    </form>
+                    <form id='register' class='input-group-register'>
+                        <input type='text' class='input-field' placeholder='First Name' required>
+                        <input type='text' class='input-field' placeholder='Last Name ' required>
+                        <input type='email' class='input-field' placeholder='Email Id' required>
+                        <input type='password' class='input-field' placeholder='Enter Password' required>
+                        <input type='password' class='input-field' placeholder='Confirm Password' required>
+                        <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                        <button type='submit' class='submit-btn'>Register</button>
+                    </form>
+                </div>
             </div>
             <div class="showcase-content">
                 <h1>See what's next...</h1>
