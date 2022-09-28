@@ -237,8 +237,9 @@ img{
 	height:400px;
 	position:relative;
 	margin:0 auto;
-	background:rgba(0,0,0,0.3);
+	background:#fff;
 	padding:10px;
+    border-radius: 3%;
     overflow: hidden;
 }
 .button-box
@@ -313,7 +314,7 @@ img{
 }
 span
 {
-	color:#777;
+	color: var(--dark-colour);
 	font-size:12px;
 	bottom:68px;
 	position:absolute;
@@ -324,7 +325,7 @@ span
 }
 #login input
 {
-	color:white;
+	color:black;
 	font-size:15;
 }
 #register
@@ -333,7 +334,7 @@ span
 }
 #register input
 {
-	color:white;
+	color:black;
 	font-size: 15;
 }
 
